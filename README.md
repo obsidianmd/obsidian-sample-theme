@@ -25,9 +25,10 @@ Once you have the repo locally on your computer, there are a couple of placehold
 
 ### Add a screenshot thumbnail
 
-Inside the repository, include a screenshot of your theme. You can name the file anything, for example `screenshot.png`.
+Inside the repository, include a screenshot thumbnail of your theme. You can name the file anything, for example `screenshot.png`. This image will be used for the small preview in the theme list.
 
 Your screenshot file should be `16:9` aspect ratio.
+Recommend size 512x384.
 
 ### Submit your theme for review
 
