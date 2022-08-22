@@ -23,7 +23,7 @@ Once you have the repo locally on your computer, there are a couple of placehold
 
 ## Adding your theme to the Theme Gallery
 
-### Add a screenshot
+### Add a screenshot thumbnail
 
 Inside the repository, include a screenshot of your theme. You can name the file anything, for example `screenshot.png`.
 
