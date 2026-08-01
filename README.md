@@ -6,9 +6,9 @@ This is a sample theme for Obsidian ([https://obsidian.md](https://obsidian.md/)
 
 <img width="244" alt="Pasted image 20220822135601" src="https://user-images.githubusercontent.com/693981/186000386-4f4da987-fcaf-4aa5-aed4-e34b5901255d.png">
 
-First, choose **Use this template**. That will create a copy of this repository (repo) under your Github profile. Then, you will want to _clone_ your new repository to your computer.
+First, select **Use this template** to create a copy of this repository under your GitHub profile. Then, clone your new repository to your computer.
 
-Once you have the repo locally on your computer, there are a couple of placeholder fields you will need to fill in.
+Once you have the repository locally on your computer, there are a couple of placeholder fields you'll need to fill in.
 
 1. Inside the `manifest.json` file, update the placeholder fields to describe your theme. For example:
 
@@ -21,10 +21,10 @@ Once you have the repo locally on your computer, there are a couple of placehold
   }
   ```
 
-   - **name**: the name of your theme.
-   - **author**: your name.
-   - **version**: the version of your theme.
-   - **minAppVersion**: this should only be changed as you add new CSS from Obsidian updates.
+   - **name** is the name of your theme.
+   - **author** is your name.
+   - **version** is the version of your theme.
+   - **minAppVersion** should only be changed as you add new CSS from Obsidian updates.
 
 After you have those fields configured, all that's left to do is add your styles! All of your CSS needs to be inside the file `theme.css` as a part of your [release](#releasing-versions).
 
@@ -43,11 +43,11 @@ Inside the repository, include a screenshot thumbnail of your theme. We recommen
 Your screenshot file should be `16:9` aspect ratio.
 The recommended size is 512x288.
 
-### Releasing Versions
+### Releasing versions
 
 Themes support [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository), introduced in v0.16 of Obsidian. This lets you specify which versions of your theme are compatible with which versions of Obsidian.
 
-This repository already includes a [GitHub Actions workflow](.github/workflows/release.yml) that automates this: pushing a tag matching your `manifest.json` version creates a draft release with `manifest.json` and `theme.css` attached, which you can then review and publish. See [Release your theme with GitHub Actions](https://docs.obsidian.md/Themes/App+themes/Release+your+theme+with+GitHub+Actions) for the full walkthrough.
+This repository already includes a [GitHub Actions workflow](.github/workflows/release.yml) that automates this. Pushing a tag matching your `manifest.json` version creates a draft release with `manifest.json` and `theme.css` attached, which you can then review and publish. See [Release your theme with GitHub Actions](https://docs.obsidian.md/Themes/App+themes/Release+your+theme+with+GitHub+Actions) for the full walkthrough.
 
 Before you push a tag, make sure `versions.json` is up to date. This file maps your theme's version to the minimum Obsidian version it's compatible with:
 
@@ -78,10 +78,10 @@ You'll also need a `LICENSE` file in the root of your repository, which isn't in
 2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
 3. In the sidebar, select **Themes**, then select **New theme**.
 4. Fill out the submission form:
-   - **GitHub repository URL**: your repository's URL, for example `https://github.com/your-username/your-repo-name`.
-   - **Owner**: who will own and maintain this entry. This doesn't have to match the repository's GitHub owner.
-   - **Screenshot path**: the path to your screenshot, relative to the repository root, for example `screenshots/screenshot.png`.
-   - **Supported modes**: check Dark and/or Light depending on which your theme supports.
+   - **GitHub repository URL** is your repository's URL, for example `https://github.com/your-username/your-repo-name`.
+   - **Owner** is who will own and maintain this entry, and doesn't have to match the repository's GitHub owner.
+   - **Screenshot path** is the path to your screenshot, relative to the repository root, for example `screenshots/screenshot.png`.
+   - For **Supported modes**, select Dark and/or Light depending on which your theme supports.
 5. Read and agree to the [Developer Policies](https://docs.obsidian.md/Developer+policies), and confirm that you'll continue to support your theme (or remove/transfer it if you can no longer provide support).
 6. Select **Submit**.
 
