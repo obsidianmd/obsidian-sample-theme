@@ -28,29 +28,14 @@ After you have those fields configured, all that's left to do is add your styles
 
 ### Add a screenshot thumbnail
 
-Inside the repository, include a screenshot thumbnail of your theme. You can name the file anything, for example `screenshot.png`. This image will be used for the small preview in the theme list.
+Inside the repository, include a screenshot thumbnail of your theme. We recommend storing it in a `screenshots` folder at the root of your repository, for example `screenshots/screenshot.png`. This image will be used for the small preview in the theme list.
 
 Your screenshot file should be `16:9` aspect ratio.
 The recommended size is 512x288.
 
-### Submit your theme for review
+## Releasing Versions
 
-To have your theme included in the Theme Gallery, you'll submit it through the Obsidian Community directory.
-
-1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
-2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
-3. In the sidebar, select **Themes**, then select **New theme**.
-4. Enter the URL of your GitHub repository, for example `https://github.com/your-username/your-repo-name`.
-5. Review and agree to the Developer policies, and confirm that you'll continue to support your theme.
-6. Select **Submit**.
-
-The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting.
-
-When a user installs your theme, Obsidian downloads `manifest.json` and `theme.css` from the GitHub release whose tag matches the version in your manifest, so you'll also need a release published (see [Releasing Versions](#releasing-versions-optional) below) in addition to the committed manifest.
-
-## Releasing Versions _(Optional)_
-
-If your theme is getting more and more complex, you might want to start thinking about how your theme will stay compatible with different versions of Obsidian. Introduced in v0.16 of Obsidian, themes support [Github Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). This means that you can specify which versions of your theme are compatible with which versions of Obsidian.
+Obsidian downloads your theme's `manifest.json` and `theme.css` from a GitHub Release, so publishing a release is a required step, not an optional one. Introduced in v0.16 of Obsidian, themes support [Github Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). This means that you can specify which versions of your theme are compatible with which versions of Obsidian.
 
 ### Steps for releasing the initial version of your theme (1.0.0)
 
@@ -104,3 +89,20 @@ Releasing a new version of your theme is the same as releasing the initial versi
   ```
 
   What's important to note here is: the new version is included as the "key" and the "value" is the minimum version of Obsidian that your theme compatible with. So if the new version of your theme is only compatible with an Insider version of Obsidian, it's important to set this value accordingly. This will prevent users on older versions of Obsidian from updating to the newer version of your theme.
+
+## Submit your theme for review
+
+To have your theme included in the Theme Gallery, you'll submit it through the Obsidian Community directory. Make sure you've [added a screenshot](#add-a-screenshot-thumbnail) and [published a release](#releasing-versions) first, since the submission form needs both.
+
+1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
+2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
+3. In the sidebar, select **Themes**, then select **New theme**.
+4. Fill out the submission form:
+   - **GitHub repository URL**: your repository's URL, for example `https://github.com/your-username/your-repo-name`.
+   - **Owner**: who will own and maintain this entry. This doesn't have to match the repository's GitHub owner.
+   - **Screenshot path**: the path to your screenshot, relative to the repository root, for example `screenshots/screenshot.png`.
+   - **Supported modes**: check Dark and/or Light depending on which your theme supports.
+5. Read and agree to the Developer Policies, and confirm that you'll continue to support your theme (or remove/transfer it if you can no longer provide support).
+6. Select **Submit**.
+
+The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting. Obsidian downloads `manifest.json` and `theme.css` from the GitHub release whose tag matches the version in your manifest, which is why a published release is required.
