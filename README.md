@@ -26,9 +26,11 @@ After you have those fields configured, all that's left to do is add your styles
 
 For a deeper walkthrough, see the official [Build a theme](https://docs.obsidian.md/Themes/App+themes/Build+a+theme) tutorial.
 
-## Adding your theme to the Theme Gallery
+## Preparing your theme for the community directory
 
-Before you continue, review the [Theme guidelines](https://docs.obsidian.md/Themes/App+themes/Theme+guidelines) for best practices, such as using CSS variables, avoiding `!important`, and keeping assets local. Themes that don't follow them are more likely to break on future Obsidian versions or get flagged during review.
+Before you can submit your theme to the [community directory](https://community.obsidian.md/), there are a few things you'll need to prepare.
+
+Review the [Theme guidelines](https://docs.obsidian.md/Themes/App+themes/Theme+guidelines) for best practices, such as using CSS variables, avoiding `!important`, and keeping assets local. Themes that don't follow them are more likely to break on future Obsidian versions or get flagged during review.
 
 ### Add a screenshot thumbnail
 
@@ -37,13 +39,13 @@ Inside the repository, include a screenshot thumbnail of your theme. We recommen
 Your screenshot file should be `16:9` aspect ratio.
 The recommended size is 512x288.
 
-## Releasing Versions
+### Releasing Versions
 
 Obsidian downloads your theme's `manifest.json` and `theme.css` from a GitHub Release, so publishing a release is a required step, not an optional one. Introduced in v0.16 of Obsidian, themes support [Github Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). This means that you can specify which versions of your theme are compatible with which versions of Obsidian.
 
 This repository already includes a [GitHub Actions workflow](.github/workflows/release.yml) that automates this: pushing a tag matching your `manifest.json` version creates a draft release with `manifest.json` and `theme.css` attached, which you can then review and publish. See [Release your theme with GitHub Actions](https://docs.obsidian.md/Themes/App+themes/Release+your+theme+with+GitHub+Actions) for details, or follow the manual steps below.
 
-### Steps for releasing the initial version of your theme (1.0.0)
+#### Steps for releasing the initial version of your theme (1.0.0)
 
 1. From your theme's repository, click on "Releases".
    
@@ -72,7 +74,7 @@ This repository already includes a [GitHub Actions workflow](.github/workflows/r
   
   This means that version 1.0.0 of your theme is compatible with version 0.16.0 of Obsidian. For the initial release of your theme, you shouldn't need to make any changes to this file.
  
-### Steps for releasing new versions
+#### Steps for releasing new versions
 
 Releasing a new version of your theme is the same as releasing the initial version.
 
