@@ -24,7 +24,11 @@ Once you have the repo locally on your computer, there are a couple of placehold
 
 After you have those fields configured, all that's left to do is add your styles! All of your CSS needs to be inside the file `theme.css` which is located at root of your repository.
 
+For a deeper walkthrough, see the official [Build a theme](https://docs.obsidian.md/Themes/App+themes/Build+a+theme) tutorial.
+
 ## Adding your theme to the Theme Gallery
+
+Before you continue, review the [Theme guidelines](https://docs.obsidian.md/Themes/App+themes/Theme+guidelines) for best practices, such as using CSS variables, avoiding `!important`, and keeping assets local. Themes that don't follow them are more likely to break on future Obsidian versions or get flagged during review.
 
 ### Add a screenshot thumbnail
 
@@ -36,6 +40,8 @@ The recommended size is 512x288.
 ## Releasing Versions
 
 Obsidian downloads your theme's `manifest.json` and `theme.css` from a GitHub Release, so publishing a release is a required step, not an optional one. Introduced in v0.16 of Obsidian, themes support [Github Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). This means that you can specify which versions of your theme are compatible with which versions of Obsidian.
+
+This repository already includes a [GitHub Actions workflow](.github/workflows/release.yml) that automates this: pushing a tag matching your `manifest.json` version creates a draft release with `manifest.json` and `theme.css` attached, which you can then review and publish. See [Release your theme with GitHub Actions](https://docs.obsidian.md/Themes/App+themes/Release+your+theme+with+GitHub+Actions) for details, or follow the manual steps below.
 
 ### Steps for releasing the initial version of your theme (1.0.0)
 
@@ -93,6 +99,8 @@ Releasing a new version of your theme is the same as releasing the initial versi
 ## Submit your theme for review
 
 To have your theme included in the Theme Gallery, you'll submit it through the Obsidian Community directory. Make sure you've [added a screenshot](#add-a-screenshot-thumbnail) and [published a release](#releasing-versions) first, since the submission form needs both.
+
+You'll also need a `LICENSE` file in the root of your repository, which isn't included in this template — see [Choose a License](https://choosealicense.com/) if you're not sure which one to use. See the official [Submit your theme](https://docs.obsidian.md/Themes/App+themes/Submit+your+theme) guide for more detail.
 
 1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
 2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
