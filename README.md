@@ -100,7 +100,7 @@ Releasing a new version of your theme is the same as releasing the initial versi
 
 To have your theme included in the Theme Gallery, you'll submit it through the Obsidian Community directory. Make sure you've [added a screenshot](#add-a-screenshot-thumbnail) and [published a release](#releasing-versions) first, since the submission form needs both.
 
-You'll also need a `LICENSE` file in the root of your repository, which isn't included in this template — see [Choose a License](https://choosealicense.com/) if you're not sure which one to use. See the official [Submit your theme](https://docs.obsidian.md/Themes/App+themes/Submit+your+theme) guide for more detail.
+You'll also need a `LICENSE` file in the root of your repository, which isn't included in this template. See [Choose a License](https://choosealicense.com/) if you're not sure which one to use. See the official [Submit your theme](https://docs.obsidian.md/Themes/App+themes/Submit+your+theme) guide for more detail.
 
 1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
 2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
@@ -110,7 +110,7 @@ You'll also need a `LICENSE` file in the root of your repository, which isn't in
    - **Owner**: who will own and maintain this entry. This doesn't have to match the repository's GitHub owner.
    - **Screenshot path**: the path to your screenshot, relative to the repository root, for example `screenshots/screenshot.png`.
    - **Supported modes**: check Dark and/or Light depending on which your theme supports.
-5. Read and agree to the Developer Policies, and confirm that you'll continue to support your theme (or remove/transfer it if you can no longer provide support).
+5. Read and agree to the [Developer Policies](https://docs.obsidian.md/Developer+policies), and confirm that you'll continue to support your theme (or remove/transfer it if you can no longer provide support).
 6. Select **Submit**.
 
 The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting. Obsidian downloads `manifest.json` and `theme.css` from the GitHub release whose tag matches the version in your manifest, which is why a published release is required.
