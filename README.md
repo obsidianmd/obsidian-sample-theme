@@ -35,7 +35,18 @@ The recommended size is 512x288.
 
 ### Submit your theme for review
 
-To have your theme included in the Theme Gallery, you will need to submit a Pull Request to [`obsidianmd/obsidian-releases`](https://github.com/obsidianmd/obsidian-releases#community-theme).
+To have your theme included in the Theme Gallery, you'll submit it through the Obsidian Community directory.
+
+1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
+2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
+3. In the sidebar, select **Themes**, then select **New theme**.
+4. Enter the URL of your GitHub repository, for example `https://github.com/your-username/your-repo-name`.
+5. Review and agree to the Developer policies, and confirm that you'll continue to support your theme.
+6. Select **Submit**.
+
+The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting.
+
+When a user installs your theme, Obsidian downloads `manifest.json` and `theme.css` from the GitHub release whose tag matches the version in your manifest, so you'll also need a release published (see [Releasing Versions](#releasing-versions-optional) below) in addition to the committed manifest.
 
 ## Releasing Versions _(Optional)_
 
