@@ -36,7 +36,7 @@ Before you can submit your theme to the [community directory](https://community.
 
 Review the [Theme guidelines](https://docs.obsidian.md/Themes/App+themes/Theme+guidelines) for best practices, such as using CSS variables, avoiding `!important`, and keeping assets local. Themes that don't follow them are more likely to break on future Obsidian versions or get flagged during review.
 
-This repository already includes [`stylelint-config-obsidianmd`](https://github.com/obsidianmd/stylelint-config), which enforces the same CSS rules used during theme review. Run `npm install` once, then `npm run lint` to check `theme.css` against them.
+This template already includes [`stylelint-config-obsidianmd`](https://github.com/obsidianmd/stylelint-config), which enforces the same CSS rules used during theme review. Run `npm install` once, then `npm run lint` to check `theme.css` against them. This also runs automatically on every pull request via the [lint workflow](.github/workflows/lint.yml).
 
 ### Add a screenshot thumbnail
 
