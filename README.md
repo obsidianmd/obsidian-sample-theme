@@ -17,7 +17,7 @@ Once you have the repository locally on your computer, there are a couple of pla
     "name": "Moonstone",
     "author": "Your Name",
     "version": "0.0.0",
-    "minAppVersion": "1.1.19"
+    "minAppVersion": "1.10.6"
   }
   ```
 
@@ -55,7 +55,7 @@ Before you push a tag, make sure `versions.json` is up to date. This file maps y
 
 ```json
 {
-  "1.0.0": "1.1.19"
+  "1.0.0": "1.10.6"
 }
 ```
 
@@ -63,8 +63,8 @@ For the initial release of your theme, you shouldn't need to make any changes to
 
 ```json
 {
-  "1.0.0": "1.1.19",
-  "1.0.1": "1.1.19"
+  "1.0.0": "1.10.6",
+  "1.0.1": "1.10.6"
 }
 ```
 
